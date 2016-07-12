@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.data.annotation.Id;
 
+import javax.persistence.Entity;
 import java.util.List;
 
 /**
@@ -14,6 +15,7 @@ import java.util.List;
  * @author Simon O'Brien
  */
 @DctmEntity(repository = "contact")
+@Entity(name="contact")
 public class Contact {
 
 	@Id
@@ -152,10 +154,6 @@ public class Contact {
 	 */
 	@JsonProperty
 	public Boolean hasPicture() {
-		if(this.contentSize > 0) {
-			return Boolean.TRUE;
-		} else {
-			return Boolean.FALSE;
-		}
+		return false;
 	}
 }

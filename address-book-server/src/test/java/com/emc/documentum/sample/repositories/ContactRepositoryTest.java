@@ -4,7 +4,6 @@ import com.emc.documentum.sample.TestConfig;
 import com.emc.documentum.sample.domain.Contact;
 import com.emc.documentum.springdata.core.Documentum;
 import org.apache.commons.lang.RandomStringUtils;
-import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
